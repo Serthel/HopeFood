@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
 
      # Apps del proyecto
-
+    'rest_framework',
     'perfil',
     'productos',
     'pedidos',
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'recordatorios',
     'notificaciones',
     'dashboard',
+    'EstadoPedido',
 ]
 
 MIDDLEWARE = [
@@ -86,13 +87,11 @@ WSGI_APPLICATION = 'hopefood_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'hopefood_db',
+        'NAME': 'hopefooddb',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb://localhost:27017',
-            'username': '',
-            'password': '',
-        }
+        }    
     }
 }
 

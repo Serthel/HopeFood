@@ -1,6 +1,6 @@
 from django.db import models
 
-class recodatorio(models.Model):
+class recordatorio(models.Model):
 
     
     pedido = models.OneToOneField('pedidos.Pedido', on_delete=models.CASCADE)
